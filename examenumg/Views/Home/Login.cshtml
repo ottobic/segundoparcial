@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Control de Estudiantes</h1>
+        <p>Favor de ingresar sus datos.</p>
+    </div>
+
+    <div class="container">
+        <form action="/Home/Valid" method="post">
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" class="form-control" placeholder="Ingrese usuario" id="email" name="usuario">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" placeholder="Ingrese password" id="pwd" name="pwd">
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
